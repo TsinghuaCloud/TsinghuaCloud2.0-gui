@@ -1,0 +1,7 @@
+1、/usr/lib/python2.7/dist-packages/horizon/
+2、 /usr/share/pyshared/horizon
+3、/usr/share/pyshared/openstack_auth
+4、 /usr/share/openstack-dashboard/
+5、/etc/openstack-dashboard/
+6、/usr/lib/python2.7/dist-packages/openstack_auth
+7、/usr/share/openstack-dashboard-ubuntu-theme/
