@@ -1,0 +1,1 @@
+../../../../../../share/pyshared/horizon/conf/panel_template/__init__.py

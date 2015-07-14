@@ -1,0 +1,1492 @@
+.
+├── api
+│   ├── base.py
+│   ├── base.pyc
+│   ├── ceilometer.py
+│   ├── ceilometer.pyc
+│   ├── cinder.py
+│   ├── cinder.pyc
+│   ├── fwaas.py
+│   ├── fwaas.pyc
+│   ├── glance.py
+│   ├── glance.pyc
+│   ├── heat.py
+│   ├── heat.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── keystone.py
+│   ├── keystone.pyc
+│   ├── lbaas.py
+│   ├── lbaas.pyc
+│   ├── network_base.py
+│   ├── network_base.pyc
+│   ├── network.py
+│   ├── network.pyc
+│   ├── neutron.py
+│   ├── neutron.pyc
+│   ├── nova.py
+│   ├── nova.pyc
+│   ├── swift.py
+│   ├── swift.pyc
+│   ├── trove.py
+│   ├── trove.pyc
+│   ├── vpn.py
+│   └── vpn.pyc
+├── conf
+│   ├── keystone_policy.json
+│   └── nova_policy.json
+├── context_processors.py
+├── context_processors.pyc
+├── dashboards
+│   ├── admin
+│   │   ├── dashboard.py
+│   │   ├── dashboard.pyc
+│   │   ├── defaults
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── defaults
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── domains
+│   │   │   ├── constants.py
+│   │   │   ├── constants.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── domains
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── flavors
+│   │   │   ├── extras
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── flavors
+│   │   │   │       ├── create.html
+│   │   │   │       ├── extras
+│   │   │   │       │   ├── _create.html
+│   │   │   │       │   ├── create.html
+│   │   │   │       │   ├── _edit.html
+│   │   │   │       │   ├── edit.html
+│   │   │   │       │   ├── _index.html
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── groups
+│   │   │   ├── constants.py
+│   │   │   ├── constants.pyc
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── groups
+│   │   │   │       ├── _add_non_member.html
+│   │   │   │       ├── add_non_member.html
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── manage.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── hypervisors
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── hypervisors
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── images
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── images
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── info
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── info
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── instances
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── instances
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── metering
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── metering
+│   │   │   │       ├── index.html
+│   │   │   │       └── stats.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── models.py
+│   │   ├── models.pyc
+│   │   ├── networks
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── ports
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── subnets
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   ├── views.pyc
+│   │   │   │   ├── workflows.py
+│   │   │   │   └── workflows.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── networks
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── ports
+│   │   │   │       │   ├── _create.html
+│   │   │   │       │   ├── create.html
+│   │   │   │       │   ├── _update.html
+│   │   │   │       │   └── update.html
+│   │   │   │       ├── subnets
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── overview
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── templates
+│   │   │   │   └── overview
+│   │   │   │       ├── usage.csv
+│   │   │   │       └── usage.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── projects
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── projects
+│   │   │   │       ├── index.html
+│   │   │   │       └── usage.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── roles
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── roles
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── routers
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── ports
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── routers
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── users
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── users
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   └── volumes
+│   │       ├── forms.py
+│   │       ├── forms.pyc
+│   │       ├── __init__.py
+│   │       ├── __init__.pyc
+│   │       ├── panel.py
+│   │       ├── panel.pyc
+│   │       ├── tables.py
+│   │       ├── tables.pyc
+│   │       ├── templates
+│   │       │   └── volumes
+│   │       │       ├── _create_volume_type.html
+│   │       │       ├── create_volume_type.html
+│   │       │       ├── detail.html
+│   │       │       └── index.html
+│   │       ├── tests.py
+│   │       ├── tests.pyc
+│   │       ├── urls.py
+│   │       ├── urls.pyc
+│   │       ├── views.py
+│   │       └── views.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── project
+│   │   ├── access_and_security
+│   │   │   ├── api_access
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── floating_ips
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   ├── views.pyc
+│   │   │   │   ├── workflows.py
+│   │   │   │   └── workflows.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── keypairs
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── security_groups
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── access_and_security
+│   │   │   │       ├── api_access
+│   │   │   │       │   ├── ec2rc.sh.template
+│   │   │   │       │   └── openrc.sh.template
+│   │   │   │       ├── floating_ips
+│   │   │   │       │   ├── _allocate.html
+│   │   │   │       │   └── allocate.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── keypairs
+│   │   │   │       │   ├── _create.html
+│   │   │   │       │   ├── create.html
+│   │   │   │       │   ├── download.html
+│   │   │   │       │   ├── _import.html
+│   │   │   │       │   └── import.html
+│   │   │   │       └── security_groups
+│   │   │   │           ├── _add_rule.html
+│   │   │   │           ├── add_rule.html
+│   │   │   │           ├── _create.html
+│   │   │   │           ├── create.html
+│   │   │   │           ├── detail.html
+│   │   │   │           ├── _update.html
+│   │   │   │           └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── containers
+│   │   │   ├── browsers.py
+│   │   │   ├── browsers.pyc
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── containers
+│   │   │   │       ├── _container_detail.html
+│   │   │   │       ├── container_detail.html
+│   │   │   │       ├── _copy.html
+│   │   │   │       ├── copy.html
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _object_detail.html
+│   │   │   │       ├── object_detail.html
+│   │   │   │       ├── _upload.html
+│   │   │   │       └── upload.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── dashboard.py
+│   │   ├── dashboard.pyc
+│   │   ├── database_backups
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── database_backups
+│   │   │   │       ├── _backup_details_help.html
+│   │   │   │       ├── backup.html
+│   │   │   │       ├── details.html
+│   │   │   │       └── index.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   └── workflows
+│   │   │       ├── create_backup.py
+│   │   │       ├── create_backup.pyc
+│   │   │       ├── __init__.py
+│   │   │       └── __init__.pyc
+│   │   ├── databases
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── databases
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── _detail_users.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _launch_details_help.html
+│   │   │   │       ├── launch.html
+│   │   │   │       ├── _launch_initialize_help.html
+│   │   │   │       ├── _launch_restore_help.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   └── workflows
+│   │   │       ├── create_instance.py
+│   │   │       ├── create_instance.pyc
+│   │   │       ├── __init__.py
+│   │   │       └── __init__.pyc
+│   │   ├── firewalls
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── firewalls
+│   │   │   │       ├── addfirewall.html
+│   │   │   │       ├── addpolicy.html
+│   │   │   │       ├── addrule.html
+│   │   │   │       ├── details_tabs.html
+│   │   │   │       ├── _firewall_details.html
+│   │   │   │       ├── _insert_rule_to_policy.html
+│   │   │   │       ├── insert_rule_to_policy.html
+│   │   │   │       ├── _policy_details.html
+│   │   │   │       ├── _remove_rule_from_policy.html
+│   │   │   │       ├── remove_rule_from_policy.html
+│   │   │   │       ├── _rule_details.html
+│   │   │   │       ├── _updatefirewall.html
+│   │   │   │       ├── updatefirewall.html
+│   │   │   │       ├── _updatepolicy.html
+│   │   │   │       ├── updatepolicy.html
+│   │   │   │       ├── _update_rule_help.html
+│   │   │   │       ├── _updaterule.html
+│   │   │   │       ├── updaterule.html
+│   │   │   │       └── _update_rules.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── images_and_snapshots
+│   │   │   ├── images
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── snapshots
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tests.py
+│   │   │   │   ├── tests.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── templates
+│   │   │   │   └── images_and_snapshots
+│   │   │   │       ├── images
+│   │   │   │       │   ├── _create.html
+│   │   │   │       │   ├── create.html
+│   │   │   │       │   ├── detail.html
+│   │   │   │       │   ├── _detail_overview.html
+│   │   │   │       │   ├── _update.html
+│   │   │   │       │   └── update.html
+│   │   │   │       ├── index.html
+│   │   │   │       └── snapshots
+│   │   │   │           ├── _create.html
+│   │   │   │           ├── create.html
+│   │   │   │           ├── detail.html
+│   │   │   │           └── _detail_overview.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── utils.py
+│   │   │   ├── utils.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   └── volume_snapshots
+│   │   │       ├── __init__.py
+│   │   │       ├── __init__.pyc
+│   │   │       ├── tables.py
+│   │   │       ├── tables.pyc
+│   │   │       ├── tabs.py
+│   │   │       ├── tabs.pyc
+│   │   │       ├── tests.py
+│   │   │       └── tests.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── instances
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── instances
+│   │   │   │       ├── _detail_console.html
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_log.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── _flavors_and_quotas.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _instance_ips.html
+│   │   │   │       ├── _launch_customize_help.html
+│   │   │   │       ├── _launch_details_help.html
+│   │   │   │       ├── _launch_network_help.html
+│   │   │   │       ├── _launch_volumes_help.html
+│   │   │   │       ├── _rebuild.html
+│   │   │   │       ├── rebuild.html
+│   │   │   │       └── _update_networks.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   └── workflows
+│   │   │       ├── create_instance.py
+│   │   │       ├── create_instance.pyc
+│   │   │       ├── __init__.py
+│   │   │       ├── __init__.pyc
+│   │   │       ├── resize_instance.py
+│   │   │       ├── resize_instance.pyc
+│   │   │       ├── update_instance.py
+│   │   │       └── update_instance.pyc
+│   │   ├── loadbalancers
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── models.py
+│   │   │   ├── models.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── loadbalancers
+│   │   │   │       ├── details_tabs.html
+│   │   │   │       ├── _member_details.html
+│   │   │   │       ├── _members_tab.html
+│   │   │   │       ├── _monitor_details.html
+│   │   │   │       ├── _monitors_tab.html
+│   │   │   │       ├── _pool_details.html
+│   │   │   │       ├── _pools_tab.html
+│   │   │   │       ├── _updatemember.html
+│   │   │   │       ├── updatemember.html
+│   │   │   │       ├── _updatemonitor.html
+│   │   │   │       ├── updatemonitor.html
+│   │   │   │       ├── _updatepool.html
+│   │   │   │       ├── updatepool.html
+│   │   │   │       ├── _updatevip.html
+│   │   │   │       ├── updatevip.html
+│   │   │   │       └── _vip_details.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── models.py
+│   │   ├── models.pyc
+│   │   ├── networks
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── ports
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── subnets
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   ├── views.pyc
+│   │   │   │   ├── workflows.py
+│   │   │   │   └── workflows.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── networks
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _network_ips.html
+│   │   │   │       ├── ports
+│   │   │   │       │   ├── detail.html
+│   │   │   │       │   ├── _detail_overview.html
+│   │   │   │       │   ├── _port_ips.html
+│   │   │   │       │   ├── _update.html
+│   │   │   │       │   └── update.html
+│   │   │   │       ├── subnets
+│   │   │   │       │   ├── detail.html
+│   │   │   │       │   ├── _detail_overview.html
+│   │   │   │       │   └── index.html
+│   │   │   │       ├── _update.html
+│   │   │   │       └── update.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   ├── views.pyc
+│   │   │   ├── workflows.py
+│   │   │   └── workflows.pyc
+│   │   ├── network_topology
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── instances
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   └── tables.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── ports
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   └── tables.pyc
+│   │   │   ├── routers
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   └── tables.pyc
+│   │   │   ├── templates
+│   │   │   │   └── network_topology
+│   │   │   │       ├── client_side
+│   │   │   │       │   ├── _balloon_container.html
+│   │   │   │       │   ├── _balloon_device.html
+│   │   │   │       │   └── _balloon_port.html
+│   │   │   │       ├── _create_router.html
+│   │   │   │       ├── create_router.html
+│   │   │   │       ├── iframe.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── _post_massage.html
+│   │   │   │       └── _svg_element.html
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── overview
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── templates
+│   │   │   │   └── overview
+│   │   │   │       ├── usage.csv
+│   │   │   │       └── usage.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── routers
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── ports
+│   │   │   │   ├── forms.py
+│   │   │   │   ├── forms.pyc
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── __init__.pyc
+│   │   │   │   ├── tables.py
+│   │   │   │   ├── tables.pyc
+│   │   │   │   ├── tabs.py
+│   │   │   │   ├── tabs.pyc
+│   │   │   │   ├── urls.py
+│   │   │   │   ├── urls.pyc
+│   │   │   │   ├── views.py
+│   │   │   │   └── views.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── routers
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── index.html
+│   │   │   │       └── ports
+│   │   │   │           ├── _create.html
+│   │   │   │           ├── create.html
+│   │   │   │           ├── _setgateway.html
+│   │   │   │           └── setgateway.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── stacks
+│   │   │   ├── api.py
+│   │   │   ├── api.pyc
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── mappings.py
+│   │   │   ├── mappings.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── sro.py
+│   │   │   ├── sro.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── stacks
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── _detail_events.html
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── _detail_resources.html
+│   │   │   │       ├── _detail_topology.html
+│   │   │   │       ├── index.html
+│   │   │   │       ├── resource.html
+│   │   │   │       ├── _resource_info.html
+│   │   │   │       ├── _resource_overview.html
+│   │   │   │       ├── _select_template.html
+│   │   │   │       ├── select_template.html
+│   │   │   │       └── _stack_info.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   ├── volumes
+│   │   │   ├── forms.py
+│   │   │   ├── forms.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── panel.py
+│   │   │   ├── panel.pyc
+│   │   │   ├── tables.py
+│   │   │   ├── tables.pyc
+│   │   │   ├── tabs.py
+│   │   │   ├── tabs.pyc
+│   │   │   ├── templates
+│   │   │   │   └── volumes
+│   │   │   │       ├── _attach.html
+│   │   │   │       ├── attach.html
+│   │   │   │       ├── _create.html
+│   │   │   │       ├── create.html
+│   │   │   │       ├── _create_snapshot.html
+│   │   │   │       ├── create_snapshot.html
+│   │   │   │       ├── detail.html
+│   │   │   │       ├── _detail_overview.html
+│   │   │   │       ├── index.html
+│   │   │   │       └── _limits.html
+│   │   │   ├── tests.py
+│   │   │   ├── tests.pyc
+│   │   │   ├── urls.py
+│   │   │   ├── urls.pyc
+│   │   │   ├── views.py
+│   │   │   └── views.pyc
+│   │   └── vpn
+│   │       ├── __init__.py
+│   │       ├── __init__.pyc
+│   │       ├── panel.py
+│   │       ├── panel.pyc
+│   │       ├── tables.py
+│   │       ├── tables.pyc
+│   │       ├── tabs.py
+│   │       ├── tabs.pyc
+│   │       ├── templates
+│   │       │   └── vpn
+│   │       │       ├── details_tabs.html
+│   │       │       ├── _ikepolicy_details.html
+│   │       │       ├── index.html
+│   │       │       ├── _ipsecpolicy_details.html
+│   │       │       ├── _ipsecsiteconnection_details.html
+│   │       │       └── _vpnservice_details.html
+│   │       ├── tests.py
+│   │       ├── tests.pyc
+│   │       ├── urls.py
+│   │       ├── urls.pyc
+│   │       ├── views.py
+│   │       ├── views.pyc
+│   │       ├── workflows.py
+│   │       └── workflows.pyc
+│   ├── router
+│   │   ├── dashboard.py
+│   │   ├── dashboard.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── models.py
+│   │   ├── models.pyc
+│   │   └── nexus1000v
+│   │       ├── forms.py
+│   │       ├── forms.pyc
+│   │       ├── __init__.py
+│   │       ├── __init__.pyc
+│   │       ├── panel.py
+│   │       ├── panel.pyc
+│   │       ├── tables.py
+│   │       ├── tables.pyc
+│   │       ├── tabs.py
+│   │       ├── tabs.pyc
+│   │       ├── templates
+│   │       │   └── nexus1000v
+│   │       │       ├── _create_network_profile.html
+│   │       │       ├── create_network_profile.html
+│   │       │       ├── index.html
+│   │       │       ├── network_profile
+│   │       │       │   └── index.html
+│   │       │       ├── policy_profile
+│   │       │       │   └── index.html
+│   │       │       ├── _update_network_profile.html
+│   │       │       └── update_network_profile.html
+│   │       ├── tests.py
+│   │       ├── tests.pyc
+│   │       ├── urls.py
+│   │       ├── urls.pyc
+│   │       ├── views.py
+│   │       └── views.pyc
+│   └── settings
+│       ├── dashboard.py
+│       ├── dashboard.pyc
+│       ├── __init__.py
+│       ├── __init__.pyc
+│       ├── models.py
+│       ├── models.pyc
+│       ├── password
+│       │   ├── forms.py
+│       │   ├── forms.pyc
+│       │   ├── __init__.py
+│       │   ├── __init__.pyc
+│       │   ├── panel.py
+│       │   ├── panel.pyc
+│       │   ├── templates
+│       │   │   └── password
+│       │   │       ├── _change.html
+│       │   │       └── change.html
+│       │   ├── tests.py
+│       │   ├── tests.pyc
+│       │   ├── urls.py
+│       │   ├── urls.pyc
+│       │   ├── views.py
+│       │   └── views.pyc
+│       └── user
+│           ├── forms.py
+│           ├── forms.pyc
+│           ├── __init__.py
+│           ├── __init__.pyc
+│           ├── panel.py
+│           ├── panel.pyc
+│           ├── templates
+│           │   └── user
+│           │       ├── _settings.html
+│           │       └── settings.html
+│           ├── tests.py
+│           ├── tests.pyc
+│           ├── urls.py
+│           ├── urls.pyc
+│           ├── views.py
+│           └── views.pyc
+├── exceptions.py
+├── exceptions.pyc
+├── hooks.py
+├── hooks.pyc
+├── __init__.py
+├── __init__.pyc
+├── local
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── local_settings.py -> /etc/openstack-dashboard/local_settings.py
+│   ├── local_settings.pyc
+│   ├── local_settings.py.example
+│   └── ubuntu_theme.py -> /etc/openstack-dashboard/ubuntu_theme.py
+├── locale
+│   ├── en
+│   │   └── LC_MESSAGES
+│   │       └── django.po
+│   ├── en_AU
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── en_GB
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── es
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── fr
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── ja
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── ko_KR
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── nl_NL
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── pl_PL
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── pt_BR
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── ru
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   ├── zh_CN
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   └── zh_TW
+│       └── LC_MESSAGES
+│           ├── django.mo
+│           └── django.po
+├── openstack
+│   ├── common
+│   │   ├── config
+│   │   │   ├── generator.py
+│   │   │   ├── generator.pyc
+│   │   │   ├── __init__.py
+│   │   │   └── __init__.pyc
+│   │   ├── context.py
+│   │   ├── context.pyc
+│   │   ├── eventlet_backdoor.py
+│   │   ├── eventlet_backdoor.pyc
+│   │   ├── excutils.py
+│   │   ├── excutils.pyc
+│   │   ├── fileutils.py
+│   │   ├── fileutils.pyc
+│   │   ├── gettextutils.py
+│   │   ├── gettextutils.pyc
+│   │   ├── importutils.py
+│   │   ├── importutils.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── jsonutils.py
+│   │   ├── jsonutils.pyc
+│   │   ├── local.py
+│   │   ├── local.pyc
+│   │   ├── log.py
+│   │   ├── log.pyc
+│   │   ├── loopingcall.py
+│   │   ├── loopingcall.pyc
+│   │   ├── network_utils.py
+│   │   ├── network_utils.pyc
+│   │   ├── notifier
+│   │   │   ├── api.py
+│   │   │   ├── api.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── log_notifier.py
+│   │   │   ├── log_notifier.pyc
+│   │   │   ├── no_op_notifier.py
+│   │   │   ├── no_op_notifier.pyc
+│   │   │   ├── rpc_notifier2.py
+│   │   │   ├── rpc_notifier2.pyc
+│   │   │   ├── rpc_notifier.py
+│   │   │   ├── rpc_notifier.pyc
+│   │   │   ├── test_notifier.py
+│   │   │   └── test_notifier.pyc
+│   │   ├── policy.py
+│   │   ├── policy.pyc
+│   │   ├── rpc
+│   │   │   ├── amqp.py
+│   │   │   ├── amqp.pyc
+│   │   │   ├── common.py
+│   │   │   ├── common.pyc
+│   │   │   ├── dispatcher.py
+│   │   │   ├── dispatcher.pyc
+│   │   │   ├── impl_fake.py
+│   │   │   ├── impl_fake.pyc
+│   │   │   ├── impl_kombu.py
+│   │   │   ├── impl_kombu.pyc
+│   │   │   ├── impl_qpid.py
+│   │   │   ├── impl_qpid.pyc
+│   │   │   ├── impl_zmq.py
+│   │   │   ├── impl_zmq.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── matchmaker.py
+│   │   │   ├── matchmaker.pyc
+│   │   │   ├── matchmaker_redis.py
+│   │   │   ├── matchmaker_redis.pyc
+│   │   │   ├── matchmaker_ring.py
+│   │   │   ├── matchmaker_ring.pyc
+│   │   │   ├── proxy.py
+│   │   │   ├── proxy.pyc
+│   │   │   ├── serializer.py
+│   │   │   ├── serializer.pyc
+│   │   │   ├── service.py
+│   │   │   ├── service.pyc
+│   │   │   ├── zmq_receiver.py
+│   │   │   └── zmq_receiver.pyc
+│   │   ├── service.py
+│   │   ├── service.pyc
+│   │   ├── threadgroup.py
+│   │   ├── threadgroup.pyc
+│   │   ├── timeutils.py
+│   │   ├── timeutils.pyc
+│   │   ├── uuidutils.py
+│   │   └── uuidutils.pyc
+│   ├── __init__.py
+│   └── __init__.pyc
+├── policy.py
+├── policy.pyc
+├── settings.py
+├── settings.pyc
+├── static
+│   ├── bootstrap
+│   │   ├── img
+│   │   │   ├── glyphicons-halflings.png
+│   │   │   └── glyphicons-halflings-white.png
+│   │   └── less
+│   │       ├── accordion.less
+│   │       ├── alerts.less
+│   │       ├── bootstrap.less
+│   │       ├── breadcrumbs.less
+│   │       ├── button-groups.less
+│   │       ├── buttons.less
+│   │       ├── carousel.less
+│   │       ├── close.less
+│   │       ├── code.less
+│   │       ├── component-animations.less
+│   │       ├── datepicker.less
+│   │       ├── dropdowns.less
+│   │       ├── forms.less
+│   │       ├── grid.less
+│   │       ├── hero-unit.less
+│   │       ├── labels.less
+│   │       ├── layouts.less
+│   │       ├── mixins.less
+│   │       ├── modals.less
+│   │       ├── navbar.less
+│   │       ├── navs.less
+│   │       ├── pager.less
+│   │       ├── pagination.less
+│   │       ├── popovers.less
+│   │       ├── progress-bars.less
+│   │       ├── reset.less
+│   │       ├── responsive.less
+│   │       ├── scaffolding.less
+│   │       ├── sprites.less
+│   │       ├── tables.less
+│   │       ├── thumbnails.less
+│   │       ├── tooltip.less
+│   │       ├── type.less
+│   │       ├── utilities.less
+│   │       ├── variables.less
+│   │       └── wells.less
+│   ├── dashboard
+│   │   ├── css
+│   │   │   ├── d46048c6478b.css
+│   │   │   └── d46048c6478b.css.backup
+│   │   ├── fonts
+│   │   │   ├── Anivers_Regular-webfont.eot
+│   │   │   ├── Anivers_Regular-webfont.svg
+│   │   │   ├── Anivers_Regular-webfont.ttf
+│   │   │   └── Anivers_Regular-webfont.woff
+│   │   ├── img
+│   │   │   ├── action_required.png
+│   │   │   ├── db-gray.gif
+│   │   │   ├── db-gray.svg
+│   │   │   ├── db-green.svg
+│   │   │   ├── db-red.svg
+│   │   │   ├── drag.png
+│   │   │   ├── drop_arrow.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── juju.png
+│   │   │   ├── lb-gray.gif
+│   │   │   ├── lb-gray.svg
+│   │   │   ├── lb-green.svg
+│   │   │   ├── lb-red.svg
+│   │   │   ├── loading.gif
+│   │   │   ├── logo.png
+│   │   │   ├── logo-splash.png
+│   │   │   ├── right_droparrow.png
+│   │   │   ├── router.png
+│   │   │   ├── search.png
+│   │   │   ├── server-gray.gif
+│   │   │   ├── server-gray.svg
+│   │   │   ├── server-green.svg
+│   │   │   ├── server.png
+│   │   │   ├── server-red.svg
+│   │   │   ├── stack-gray.gif
+│   │   │   ├── stack-gray.svg
+│   │   │   ├── stack-green.svg
+│   │   │   ├── stack-red.svg
+│   │   │   ├── tsinghua.jpg
+│   │   │   ├── tsinghua.png
+│   │   │   ├── unknown-gray.gif
+│   │   │   ├── unknown-gray.svg
+│   │   │   ├── unknown-green.svg
+│   │   │   ├── unknown-red.svg
+│   │   │   └── up_arrow.png
+│   │   ├── js
+│   │   │   ├── 588884c5a22a.js
+│   │   │   └── 59722976ae97.js
+│   │   ├── less
+│   │   │   ├── horizon_charts.less
+│   │   │   ├── horizon.less
+│   │   │   └── rickshaw.css
+│   │   └── manifest.json
+│   ├── horizon -> ../../../pyshared/horizon/static/horizon
+│   └── ubuntu -> ../../../openstack-dashboard-ubuntu-theme/static/ubuntu
+├── templates
+│   ├── 403.html
+│   ├── 404.html
+│   ├── 500.html
+│   ├── _header.html
+│   └── _stylesheets.html
+├── test
+│   ├── api_tests
+│   │   ├── base_tests.py
+│   │   ├── base_tests.pyc
+│   │   ├── ceilometer_tests.py
+│   │   ├── ceilometer_tests.pyc
+│   │   ├── cinder_tests.py
+│   │   ├── cinder_tests.pyc
+│   │   ├── fwaas_tests.py
+│   │   ├── fwaas_tests.pyc
+│   │   ├── glance_tests.py
+│   │   ├── glance_tests.pyc
+│   │   ├── heat_tests.py
+│   │   ├── heat_tests.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── keystone_tests.py
+│   │   ├── keystone_tests.pyc
+│   │   ├── lbaas_tests.py
+│   │   ├── lbaas_tests.pyc
+│   │   ├── network_tests.py
+│   │   ├── network_tests.pyc
+│   │   ├── neutron_tests.py
+│   │   ├── neutron_tests.pyc
+│   │   ├── nova_tests.py
+│   │   ├── nova_tests.pyc
+│   │   ├── swift_tests.py
+│   │   ├── swift_tests.pyc
+│   │   ├── vpnaas_tests.py
+│   │   └── vpnaas_tests.pyc
+│   ├── error_pages_urls.py
+│   ├── error_pages_urls.pyc
+│   ├── helpers.py
+│   ├── helpers.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── settings.py
+│   ├── settings.pyc
+│   ├── templates
+│   │   ├── 404.html
+│   │   ├── 500.html
+│   │   ├── base-sidebar.html
+│   │   ├── registration
+│   │   │   └── login.html
+│   │   ├── tab_group.html
+│   │   ├── _tab.html
+│   │   └── workflow.html
+│   ├── test_data
+│   │   ├── ceilometer_data.py
+│   │   ├── ceilometer_data.pyc
+│   │   ├── cinder_data.py
+│   │   ├── cinder_data.pyc
+│   │   ├── exceptions.py
+│   │   ├── exceptions.pyc
+│   │   ├── glance_data.py
+│   │   ├── glance_data.pyc
+│   │   ├── heat_data.py
+│   │   ├── heat_data.pyc
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── keystone_data.py
+│   │   ├── keystone_data.pyc
+│   │   ├── neutron_data.py
+│   │   ├── neutron_data.pyc
+│   │   ├── nova_data.py
+│   │   ├── nova_data.pyc
+│   │   ├── swift_data.py
+│   │   ├── swift_data.pyc
+│   │   ├── trove_data.py
+│   │   ├── trove_data.pyc
+│   │   ├── utils.py
+│   │   └── utils.pyc
+│   └── tests
+│       ├── error_pages.py
+│       ├── error_pages.pyc
+│       ├── __init__.py
+│       ├── __init__.pyc
+│       ├── policy.py
+│       ├── policy.pyc
+│       ├── quotas.py
+│       ├── quotas.pyc
+│       ├── selenium.py
+│       ├── selenium.pyc
+│       ├── templates.py
+│       ├── templates.pyc
+│       ├── utils.py
+│       └── utils.pyc
+├── tree.txt
+├── urls.py
+├── urls.py.backup
+├── urls.pyc
+├── usage
+│   ├── base.py
+│   ├── base.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── quotas.py
+│   ├── quotas.pyc
+│   ├── tables.py
+│   ├── tables.pyc
+│   ├── views.py
+│   └── views.pyc
+├── utils
+│   ├── filters.py
+│   ├── filters.pyc
+│   ├── __init__.py
+│   └── __init__.pyc
+├── views.py
+├── views.py.backup
+├── views.pyc
+└── wsgi
+    └── django.wsgi
+
+199 directories, 1290 files

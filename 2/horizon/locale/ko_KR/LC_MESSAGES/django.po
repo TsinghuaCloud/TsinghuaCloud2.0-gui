@@ -1,0 +1,396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# bluejay.kr <bluejay.ahn@gmail.com>, 2012
+# 명환 유 <funfun.yoo@gmail.com>, 2013
+# ujuc Gang <potopro@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Horizon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-07 04:40-0600\n"
+"PO-Revision-Date: 2013-12-07 18:30+0000\n"
+"Last-Translator: Akihiro Motoki <amotoki@gmail.com>\n"
+"Language-Team: Korean (Korea) (http://www.transifex.com/projects/p/openstack/language/ko_KR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: base.py:429
+msgid "Other"
+msgstr "다른"
+
+#: decorators.py:55
+msgid "Please log in to continue."
+msgstr "계속 진행하려면 로그인하십시오."
+
+#: decorators.py:87
+#, python-format
+msgid "You are not authorized to access %s"
+msgstr "%s에 접근 권한이 없습니다. "
+
+#: exceptions.py:281
+#, python-format
+msgid "Unauthorized: %s"
+msgstr "권한 없음: %s"
+
+#: exceptions.py:284
+msgid "Unauthorized. Please try logging in again."
+msgstr "권한이 없습니다. 다시 로그인 해주십시오."
+
+#: middleware.py:72
+msgid "Session timed out."
+msgstr "세션 타임 아웃."
+
+#: browsers/base.py:90
+msgid "Navigation Item"
+msgstr "네비게이션 항목"
+
+#: browsers/views.py:42
+#, python-format
+msgid "Select a %s to browse."
+msgstr "브라우져에서 %s를 선택하십시오."
+
+#: conf/default.py:29
+msgid "Password is not accepted"
+msgstr "허용되지 않는 암호 입니다."
+
+#: tables/actions.py:382
+#: templates/horizon/common/_data_table_table_actions.html:13
+#: templates/horizon/common/_workflow_step_update_members.html:11
+#: templates/horizon/common/_workflow_step_update_members.html:17
+msgid "Filter"
+msgstr "필터"
+
+#: tables/actions.py:562
+#, python-format
+msgctxt "past"
+msgid "%(action)s %(data_type)s"
+msgstr "%(action)s %(data_type)s"
+
+#: tables/actions.py:564
+#, python-format
+msgctxt "present"
+msgid "%(action)s %(data_type)s"
+msgstr "%(action)s %(data_type)s"
+
+#: tables/actions.py:598
+msgid "N/A"
+msgstr "N/A"
+
+#: tables/actions.py:626
+#, python-format
+msgid "You do not have permission to %(action)s: %(objs)s"
+msgstr "%(action)s의 권한이 없습니다.: %(objs)s"
+
+#: tables/actions.py:632
+#, python-format
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "%(action)s를 할 수 없습니다.: %(objs)s"
+
+#: tables/actions.py:638
+#, python-format
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: tables/actions.py:648
+msgid "Delete"
+msgstr "삭제"
+
+#: tables/actions.py:649
+msgid "Deleted"
+msgstr "삭제됨"
+
+#: tables/base.py:287
+#, python-format
+msgid "The attribute %(attr)s doesn't exist on %(obj)s."
+msgstr "%(obj)s 에 %(attr)s 속성이 없습니다."
+
+#: tables/base.py:766
+msgid "No items to display."
+msgstr "표시할 항목이 없습니다."
+
+#: tables/base.py:870
+msgid "Actions"
+msgstr "실행"
+
+#: tables/base.py:1063
+#, python-format
+msgid "No match returned for the id \"%s\"."
+msgstr "ID \"%s\" 에 일치되는 항목이 없습니다."
+
+#: tables/base.py:1193
+msgid "Please select a row before taking that action."
+msgstr "해당 작업을 실행하기 전에 열(row)을 선택하십시오."
+
+#: templates/_header.html:4
+#, python-format
+msgid "Logged in as: %(username)s"
+msgstr "로그인 중: %(username)s"
+
+#: templates/_header.html:6
+msgid "Help"
+msgstr "도움말"
+
+#: templates/_header.html:8
+msgid "Sign Out"
+msgstr "로그 아웃"
+
+#: templates/splash.html:7 templates/auth/login.html:4
+msgid "Login"
+msgstr "로그인"
+
+#: templates/auth/_login.html:5
+msgid "Log In"
+msgstr "로그인"
+
+#: templates/auth/_login.html:15
+msgid "You don't have permissions to access:"
+msgstr "접근 권한이 없습니다.:"
+
+#: templates/auth/_login.html:17
+msgid "Login as different user or go back to"
+msgstr "다른 사용자로 로그인하거나 돌아가기"
+
+#: templates/auth/_login.html:18
+msgid "home page"
+msgstr "홈페이지"
+
+#: templates/auth/_login.html:33
+msgid "Sign In"
+msgstr "등록"
+
+#: templates/horizon/_messages.html:7
+msgid "Info: "
+msgstr "정보:"
+
+#: templates/horizon/_messages.html:13
+msgid "Warning: "
+msgstr "경고:"
+
+#: templates/horizon/_messages.html:19
+msgid "Success: "
+msgstr "완료:"
+
+#: templates/horizon/_messages.html:25
+msgid "Error: "
+msgstr "오류:"
+
+#: templates/horizon/common/_data_table.html:54
+msgid "Summary"
+msgstr "요약"
+
+#: templates/horizon/common/_data_table.html:63
+#, python-format
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "%(counter)s 항목을 보여줍니다."
+
+#: templates/horizon/common/_data_table_row_actions.html:10
+msgid "More"
+msgstr "더"
+
+#: templates/horizon/common/_limit_summary.html:4
+msgid "Limit Summary"
+msgstr "간략한 요약"
+
+#: templates/horizon/common/_limit_summary.html:7
+msgid "Instances"
+msgstr "인스턴스"
+
+#: templates/horizon/common/_limit_summary.html:8
+#: templates/horizon/common/_limit_summary.html:15
+#: templates/horizon/common/_limit_summary.html:22
+#: templates/horizon/common/_limit_summary.html:29
+#: templates/horizon/common/_limit_summary.html:36
+#, python-format
+msgid "Used <span> %(used)s </span> of <span> %(available)s </span>"
+msgstr "<span> %(available)s </span> 에서 <span> %(used)s </span> 사용 중"
+
+#: templates/horizon/common/_limit_summary.html:14
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: templates/horizon/common/_limit_summary.html:21
+msgid "RAM"
+msgstr "RAM"
+
+#: templates/horizon/common/_limit_summary.html:28
+msgid "Floating IPs"
+msgstr "유동 IP"
+
+#: templates/horizon/common/_limit_summary.html:35
+msgid "Security Groups"
+msgstr "보안 그룹"
+
+#: templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "%(nav_items)s 항목을 보여줍니다."
+
+#: templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "%(content_items)s 항목을 보여줍니다."
+
+#: templates/horizon/common/_sidebar.html:15
+msgid "Current Project"
+msgstr "현재 프로젝트"
+
+#: templates/horizon/common/_sidebar.html:39
+msgid "Managing Region"
+msgstr "지역 관리"
+
+#: templates/horizon/common/_usage_summary.html:5
+msgid "Select a period of time to query its usage"
+msgstr "사용량을 조회할 기간을 선택하세요."
+
+#: templates/horizon/common/_usage_summary.html:7
+#, python-format
+msgid "<span>From: %(start)s </span><span>To: %(end)s </span>"
+msgstr "<span> %(start)s 에서 </span><span> %(end)s 까지 </span>"
+
+#: templates/horizon/common/_usage_summary.html:8
+msgid "Submit"
+msgstr "제출"
+
+#: templates/horizon/common/_usage_summary.html:9
+msgid "The date should be in YYYY-mm-dd format."
+msgstr "날짜는 YYYY-mm-dd 형식이어야 합니다."
+
+#: templates/horizon/common/_usage_summary.html:14
+msgid "Active Instances"
+msgstr "동작 중인 인스턴스"
+
+#: templates/horizon/common/_usage_summary.html:15
+msgid "Active RAM"
+msgstr "사용 중인 RAM"
+
+#: templates/horizon/common/_usage_summary.html:16
+msgid "This Period's VCPU-Hours"
+msgstr "이번 달 VCPU 사용 시간"
+
+#: templates/horizon/common/_usage_summary.html:17
+msgid "This Period's GB-Hours"
+msgstr "이번 달 GB 사용 시간"
+
+#: templates/horizon/common/_workflow.html:36
+msgid "Cancel"
+msgstr "취소"
+
+#: templatetags/branding.py:35
+msgid "Horizon"
+msgstr "호라이즌"
+
+#: templatetags/horizon.py:92
+msgid "No Limit"
+msgstr "제한 없음"
+
+#: templatetags/horizon.py:94 templatetags/horizon.py:96
+msgid "Available"
+msgstr "사용 가능한"
+
+#: templatetags/sizeformat.py:45
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d 바이트"
+
+#: templatetags/sizeformat.py:49
+#, python-format
+msgid "%(size)d"
+msgid_plural "%(size)d"
+msgstr[0] "%(size)d"
+
+#: templatetags/sizeformat.py:52
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: templatetags/sizeformat.py:55
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: templatetags/sizeformat.py:58
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: templatetags/sizeformat.py:61
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: templatetags/sizeformat.py:63
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: utils/fields.py:48
+msgid "Incorrect format for IP address"
+msgstr "IP 주소 형식이 잘못 되었습니다."
+
+#: utils/fields.py:49
+msgid "Invalid version for IP address"
+msgstr "IP 주소 버전이 잘못되었습니다."
+
+#: utils/fields.py:50
+msgid "Invalid subnet mask"
+msgstr "서브넷 mask가 잘못되었습니다."
+
+#: utils/validators.py:25 utils/validators.py:49
+msgid "Not a valid port number"
+msgstr "유효하지 않는 포트 번호"
+
+#: utils/validators.py:30
+msgid "Not a valid IP protocol number"
+msgstr "유효하지 않은 IP 프로토콜 번호"
+
+#: utils/validators.py:44
+msgid "One colon allowed in port range"
+msgstr "포트 범위내에서 허용된 하나의 colon"
+
+#: utils/validators.py:51
+msgid "Port number must be integer"
+msgstr "포트 번호는 정수이어야 합니다."
+
+#: workflows/base.py:72
+msgid "Processing..."
+msgstr "작업 중..."
+
+#: workflows/base.py:493
+msgid "All available"
+msgstr "모두 사용가능"
+
+#: workflows/base.py:494
+msgid "Members"
+msgstr "멤버"
+
+#: workflows/base.py:495
+msgid "None available."
+msgstr "사용할 수 있는 것이 없음."
+
+#: workflows/base.py:496
+msgid "No members."
+msgstr "멤버가 없습니다."
+
+#: workflows/base.py:601
+msgid "Save"
+msgstr "저장"
+
+#: workflows/base.py:602
+#, python-format
+msgid "%s completed successfully."
+msgstr "%s가 성공적으로 완료되었습니다."
+
+#: workflows/base.py:603
+#, python-format
+msgid "%s did not complete."
+msgstr "%s가 완료되지 않았습니다."

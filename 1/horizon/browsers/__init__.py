@@ -1,0 +1,1 @@
+../../../../../share/pyshared/horizon/browsers/__init__.py

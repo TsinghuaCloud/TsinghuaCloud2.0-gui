@@ -1,0 +1,1 @@
+../../../../../share/pyshared/openstack_auth/tests/settings.py

@@ -1,0 +1,1 @@
+../../../../../share/pyshared/horizon/browsers/views.py

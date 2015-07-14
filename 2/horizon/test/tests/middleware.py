@@ -1,0 +1,50 @@
+# vim: tabstop=4 shiftwidth=4 softtabstop=4
+
+# Copyright 2012 OpenStack Foundation
+# All Rights Reserved.
+#
+#    Licensed under the Apache License, Version 2.0 (the "License"); you may
+#    not use this file except in compliance with the License. You may obtain
+#    a copy of the License at
+#
+#         http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+#    License for the specific language governing permissions and limitations
+#    under the License.
+
+import time
+
+from django.conf import settings  # noqa
+
+from horizon import exceptions
+from horizon import middleware
+from horizon.test import helpers as test
+
+
+class MiddlewareTests(test.TestCase):
+    def test_redirect_login_fail_to_login(self):
+        url = settings.LOGIN_URL
+        request = self.factory.post(url)
+
+        mw = middleware.HorizonMiddleware()
+        resp = mw.process_exception(request, exceptions.NotAuthorized())
+        resp.client = self.client
+
+        self.assertRedirects(resp, url)
+
+    def test_redirect_session_timeout(self):
+        requested_url = '/project/instances/'
+        response_url = '%s?next=%s' % (settings.LOGOUT_URL, requested_url)
+        request = self.factory.get(requested_url)
+        try:
+            timeout = settings.SESSION_TIMEOUT
+        except AttributeError:
+            timeout = 1800
+        request.session['last_activity'] = int(time.time()) - (timeout + 10)
+        mw = middleware.HorizonMiddleware()
+        resp = mw.process_request(request)
+        self.assertEqual(resp.status_code, 302)
+        self.assertEqual(resp.get('Location'), response_url)

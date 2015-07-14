@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to the Tsinghua Cloud</title>
+
+<!--可无视-->
+<link href="{{ STATIC_URL }}horizon/css/base.css" rel="stylesheet" type="text/css" />
+<!--圆点-->
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}horizon/css/style_slide.css">
+<!--必要样式-->
+<link href="{{ STATIC_URL }}horizon/css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{{ STATIC_URL }}horizon/js/jquery.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}horizon/js/script.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}horizon/js/koala.min.1.5.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}horizon/js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+Qfast.add('widgets', { path: "{{ STATIC_URL }}horizon/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+Qfast(false, 'widgets', function () {
+	K.tabs({
+		id: 'decoroll2',//焦点图包裹id  
+		conId: "decoimg_a2",//大图域包裹id  
+		tabId:"deconum2",//小圆点数字提示id
+		tabTn:"a",
+		conCn: '.decoimg_b2',//大图域配置class       
+		auto: 1,//自动播放 1或0
+		effect: 'fade',//效果配置
+		eType: 'mouseover',// 鼠标事件
+		pageBt:true,//是否有按钮切换页码
+		bns: ['.prev', '.next'],//前后按钮配置class                          
+		interval: 3000// 停顿时间  
+	}) 
+}) 
+</script>
+
+
+
+</head>
+
+<style type="text/css">
+    div {
+ /*       width:130.5%;*/
+	width:1000px;
+    	height:600px;
+	
+    }
+    #div1,#div3{
+        background-color:rgba(144, 106, 160, 0.76);
+    }
+    #div2,#div4{
+	background-color:#ccc;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+	$('#a1').click(function(){
+		$.scrollTo('#div1',500); 
+	});
+	$('#a2').click(function(){
+		$.scrollTo('#div2',700); 
+	});
+	$('#a3').click(function(){
+		$.scrollTo('#div3',900); 
+	});
+	$('#a4').click(function(){
+		$.scrollTo('#div4',1000); 
+	});
+    });
+</script>
+
+<style type="text/css">
+.c{ margin: auto; width:800px;}
+.c span{display:block; text-align: center; padding: 50px; font-family: helvetica, arial, sans-serif; font-size: 1000px; font-weight: bold; color: #D1D1D1; background: #CCC; text-shadow: -1px -1px white, 1px 1px #333;text-decoration:none}
+span.c1:hover, span.c2 { font-size: 50px; color:black; text-shadow: 1px 1px white, -1px -1px #333; }
+span.c2:hover { text-shadow: -1px -1px white, 1px 1px #333;}
+</style>
+
+<body>
+
+
+<header>
+    <h1>清华云平台---Tsinghua Cloud</h1>
+    <a href="/horizon/splash">进入系统！</a>
+   
+</header>
+
+<main class="cd-container">
+    <!--
+	<div style="text-align:center;margin:50px 0">
+<p>jQuery可变透明度返回顶部代码，如果向下滚动超过1200像素，按钮的透明度会下降，减少视觉干扰，更便于浏览内容主体，非常贴心的用户体验，兼容主流浏览器，素材家园推荐下载！</p><p><br /></p><p>使用方法：</p><p>1、在head区域引入样式表文件sucaijiayuan.css</p><p>2、在head区域引入jquery.min和sucaijiayuan.js，注意引入的先后顺序</p><p>3、在你的网页中加入&lt;!-- 代码 开始 --&gt;&lt;!-- 代码 结束 --&gt;注释区域代码即可。</p>
+    <p style="margin:20px 0"></p>
+    </div>
+	-->
+	<div id="decoroll2" class="imgfocus" style="margin:0 -90px"> 
+
+		<div id="decoimg_a2" class="imgbox">
+			<div class="decoimg_b2"><a href="#" id="a1"><img src="{{ STATIC_URL }}horizon/images/1.jpg"></a></div>
+			<div class="decoimg_b2"><a href="#" id="a2"><img src="{{ STATIC_URL }}horizon/images/2.jpg"></a></div>
+			<div class="decoimg_b2"><a href="#" id="a3"><img src="{{ STATIC_URL }}horizon/images/3.jpg"></a></div>
+			<div class="decoimg_b2"><a href="#" id="a4"><img src="{{ STATIC_URL }}horizon/images/4.jpg"></a></div>
+		</div>
+	
+		<ul id="deconum2" class="num_a2">
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云主机</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云存储</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云监控</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云网管</a></li>
+		</ul>
+	
+	</div>
+	<div id = "div0" style="height:20px">
+	</div>
+	<div id = "div1" style="margin: 0 -90px" class="shine_red">
+	<span class = "c2">云主机</span><br>
+	云主机是云计算在基础设施应用上的重要组成部分，位于云计算产业链金字塔底层，产品源自云计算平台。该平台整合了互联网应用三大核心要素：计算、存储、网络，面向用户提供公用化的互联网基础设施服务。云主机是一种类似VPS主机的虚拟化技术， VPS是采用虚拟软件，VZ或VM在一台主机上虚拟出多个类似独立主机的部分，能够实现单机多用户，每个部分都可以做单独的操作系统，管理方法同主机一样。 而云主机是在一组集群主机上虚拟出多个类似独立主机的部分，集群中每个主机上都有云主机的一个镜像，从而大大提高了虚拟主机的安全稳定性，除非所有的集群内主机全部出现问题，云主机才会无法访问。
+	</div>
+	<div id = "div0" style="height:20px">
+        </div>
+	<div id = "div2" style="margin: 0 -90px" class="shine_blue">
+	云存储<br>
+	云存储是在云计算(cloud computing)概念上延伸和发展出来的一个新的概念，是一种新兴的网络存储技术，是指通过集群应用、网络技术或分布式文件系统等功能，将网络中大量各种不同类型的存储设备通过应用软件集合起来协同工作，共同对外提供数据存储和业务访问功能的一个系统。当云计算系统运算和处理的核心是大量数据的存储和管理时，云计算系统中就需要配置大量的存储设备，那么云计算系统就转变成为一个云存储系统，所以云存储是一个以数据存储和管理为核心的云计算系统。简单来说，云存储就是将储存资源放到云上供人存取的一种新兴方案。使用者可以在任何时间、任何地方，透过任何可连网的装置连接到云上方便地存取数据
+	</div>
+	<div id = "div0" style="height:20px">
+        </div>
+	<div id = "div3" style="margin: 0 -90px" class="shine_red">
+	云监控<br>
+	通过和云计算平台的整合，针对网络、系统、应用等内容提供可用性、用户体验和安全性方面的监控服务。保障云计算用户的业务稳定安全运行。当服务器发送故障时，及时的给网站管理人员发送邮件和短信报警。第一时间了解网站状态，将故障时间降低到最小。同时也提供其他服务，例如追踪用户访问网站的速度、协助用户判断故障原因等。
+	</div>
+	<div id = "div0" style="height:20px">
+        </div>
+	<div id = "div4"style="margin: 0 -90px" class="shine_blue">
+	云网管<br>
+	云网管是云计算应用的一种，是云计算技术理念和IT监控技术的完美结合，云网管的成功开发和应用，使云计算理念在IT监控领域落地，云网管成为云计算的最佳实践之一。云网管主要部署于企业的数据中心内部，用来实现对数据中心、局域网和广域网上的服务器、网络、应用和存储等IT基础设施软硬件的海量监控。由于企业数据中心的私密性，云网管的应用类型大多数是私有云，也有部分属于公有云，比如和主机托管商合作提供给广大中小企业的云监控服务。
+	</div>
+</main>
+<!--以上可无视-->
+
+
+
+
+<!--必要代码-->
+<a href="#0" class="cd-top">Top</a>
+
+</body>
+</html>

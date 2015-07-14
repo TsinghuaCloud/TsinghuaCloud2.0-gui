@@ -1,0 +1,1 @@
+../../../../../../../share/pyshared/horizon/static/horizon/lib/hogan-2.0.0.js

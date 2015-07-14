@@ -1,0 +1,1 @@
+../../../../../../../share/pyshared/openstack_auth/locale/es/LC_MESSAGES/django.po

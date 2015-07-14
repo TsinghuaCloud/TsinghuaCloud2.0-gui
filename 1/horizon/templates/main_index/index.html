@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to the Tsinghua Cloud</title>
+
+<!--可无视-->
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<!--圆点-->
+<link rel="stylesheet" type="text/css" href="css/style_slide.css">
+<!--必要样式-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<script type="text/javascript">
+Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+Qfast(false, 'widgets', function () {
+	K.tabs({
+		id: 'decoroll2',//焦点图包裹id  
+		conId: "decoimg_a2",//大图域包裹id  
+		tabId:"deconum2",//小圆点数字提示id
+		tabTn:"a",
+		conCn: '.decoimg_b2',//大图域配置class       
+		auto: 1,//自动播放 1或0
+		effect: 'fade',//效果配置
+		eType: 'mouseover',// 鼠标事件
+		pageBt:true,//是否有按钮切换页码
+		bns: ['.prev', '.next'],//前后按钮配置class                          
+		interval: 3000// 停顿时间  
+	}) 
+}) 
+</script>
+
+
+
+</head>
+<body>
+
+
+<header>
+    <h1>清华云平台---Tsinghua Cloud</h1>
+    <p>请登录系统！</p>
+</header>
+
+<main class="cd-container">
+    <!--
+	<div style="text-align:center;margin:50px 0">
+<p>jQuery可变透明度返回顶部代码，如果向下滚动超过1200像素，按钮的透明度会下降，减少视觉干扰，更便于浏览内容主体，非常贴心的用户体验，兼容主流浏览器，素材家园推荐下载！</p><p><br /></p><p>使用方法：</p><p>1、在head区域引入样式表文件sucaijiayuan.css</p><p>2、在head区域引入jquery.min和sucaijiayuan.js，注意引入的先后顺序</p><p>3、在你的网页中加入&lt;!-- 代码 开始 --&gt;&lt;!-- 代码 结束 --&gt;注释区域代码即可。</p>
+    <p style="margin:20px 0"></p>
+    </div>
+	-->
+	<div id="decoroll2" class="imgfocus" style="margin:0 -90px"> 
+
+		<div id="decoimg_a2" class="imgbox">
+			<div class="decoimg_b2"><a href="http://www.17sucai.com/"><img src="images/1.jpg"></a></div>
+			<div class="decoimg_b2"><a href="http://www.17sucai.com/"><img src="images/2.jpg"></a></div>
+			<div class="decoimg_b2"><a href="http://www.17sucai.com/"><img src="images/3.jpg"></a></div>
+			<div class="decoimg_b2"><a href="http://www.17sucai.com/"><img src="images/4.jpg"></a></div>
+		</div>
+	
+		<ul id="deconum2" class="num_a2">
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云主机</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云存储</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云监控</a></li>
+			<li><a href="javascript:void(0)" hidefocus="true" target="_self">云网管</a></li>
+		</ul>
+	
+	</div>
+	
+</main>
+<!--以上可无视-->
+
+
+
+
+<!--必要代码-->
+<a href="#0" class="cd-top">Top</a>
+
+</body>
+</html>

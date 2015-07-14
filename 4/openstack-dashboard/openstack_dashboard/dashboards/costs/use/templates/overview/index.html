@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% load i18n %} 
+{% block title %}消费记录{% endblock %} 
+{% block page_header %}  
+  {% include "horizon/common/_page_header.html" with title=_("Costs") %} 
+{% endblock page_header %}  
+{% block main %}
+  {% include "costs/overview/_account.html"%}  
+  {{ table.render }}  
+{% endblock %}   

@@ -1,0 +1,94 @@
+/* -------------------------------- 
+
+Primary style
+www.sucaijiayuan.com
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Bitter", sans-serif;
+  color: #f5f4ed;
+  background-color: rgba(28, 92, 155, 0.17);
+}
+
+a {
+  color: #e86256;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  height:3000px;
+  margin: 2em auto;
+  display:block
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+header {
+  background: rgba(75, 117, 147, 0.87);
+  height: 100px;
+  text-align: center;
+}
+header h1 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.6em;
+  margin-bottom: .2em;
+}
+header p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #FEFCFD;
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 150px;
+  }
+  header h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding-top: 2em;
+  }
+}
+
+main p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 22px;
+}
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 14px;
+    font-size: 1rem;
+  }
+}
