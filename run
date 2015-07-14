@@ -1,0 +1,11 @@
+#!/bin/bash
+cp -r ./1/horizon /usr/lib/python2.7/dist-packages/
+cp -r ./2/horizon /usr/share/pyshared/
+cp -r ./3/openstack_auth /usr/share/pyshared/
+cp -r ./4/openstack-dashboard /usr/share/
+cp -r ./5/openstack-dashboard /etc/
+cp -r ./6/openstack_auth /usr/lib/python2.7/dist-packages/
+cp -r ./7/openstack-dashboard-ubuntu-theme /usr/share/
+
+service apache2 restart
+
