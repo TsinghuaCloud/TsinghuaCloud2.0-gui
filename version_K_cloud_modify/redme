@@ -1,0 +1,3 @@
+modify ./1/openstack_dashboard/set_ip
+then run run.sh
+
